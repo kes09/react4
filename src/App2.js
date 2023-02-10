@@ -28,7 +28,10 @@ export default class Array extends Component  {
   render() {
     const items = this.state.items;
     return (
-      <div className="wrapper">
+      <div className="wrapper" 
+       style={{
+        textAlign:'center'
+      }}>
         <div>
           List: {items.length} total items.
         </div>

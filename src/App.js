@@ -43,7 +43,10 @@ export default class App extends Component{
   render(){
     console.log("render");
     return(
-    <div>
+    <div
+     style={{
+      textAlign:'center'
+    }}>
      <button onClick={this.handleToggle}>click</button>
      <button onClick={this.handleRemoveItem}>Remove</button>
      {this.state.showUserlist && this.state.users.length >0 ? (<>{this.state.users.map((item)=>{
